@@ -8,8 +8,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "i2c": "^0.2.3"
-	"pi-spi": "^1.0.1"
+    "i2c": "^0.2.3",
+    "pi-spi": "^1.0.1"
   },
   "keywords": [
     "i2c",
@@ -21,8 +21,8 @@
   ],
   "node-red": {
     "nodes": {
-      "ds3232m": "src/ds3232m.js"
-	  "mc33879apek": "src/mc33879apek.js"
+      "ds3232m": "src/ds3232m.js", 
+      "mc33879apek": "src/mc33879apek.js"
     }
   },
   "bugs": {
