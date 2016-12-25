@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('DS3232M',{
+        category: 'input',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"DS3232M";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="DS3232M">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Apdu2Pcsc">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="DS3232M">
+    <p>A node that provides access to a I2C connected DS3232M rtc + sram chip</p>
+</script>

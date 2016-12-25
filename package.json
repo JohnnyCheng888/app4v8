@@ -1,0 +1,40 @@
+{
+  "name": "node-red-contrib-app4v8",
+  "version": "0.0.1",
+  "description": "Nodes for node-red providing access to the app4v8 raspberry pi io extension",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyCheng888/app4v8.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "i2c": "^0.2.3"
+	"pi-spi": "^1.0.1"
+  },
+  "keywords": [
+    "i2c",
+    "spi",
+    "output",
+    "rtc",
+	"ds3232m",
+	"mc33879apek"
+  ],
+  "node-red": {
+    "nodes": {
+      "ds3232m": "src/ds3232m.js"
+	  "mc33879apek": "src/mc33879apek.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/JohnnyCheng888/app4v8/issues"
+  },
+  "homepage": "https://github.com/JohnnyCheng888/app4v8#readme",
+  "main": "ds3232m.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johnny Cheng",
+  "directories": {
+    "app4v8": "app4v8"
+	}
+}
